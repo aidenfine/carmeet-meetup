@@ -4,6 +4,8 @@ import NewMeetupsPage from "./pages/NewMeetup";
 import Favorites from "./pages/Favorites";
 import MainNavigation from "./components/layout/MainNavigation";
 
+// BACKGROUND FOR PAGES COLOR #212121
+
 function App() {
   return (
     <div>
