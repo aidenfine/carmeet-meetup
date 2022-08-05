@@ -4,8 +4,7 @@ const DUMMY_DATA = [
   {
     id: "m1",
     title: "Park and Chill",
-    image:
-      "https://pbs.twimg.com/profile_images/1349737947487080450/gkppV7Un_400x400.jpg",
+    image: "https://i.ytimg.com/vi/I2c_lhDAARI/maxresdefault.jpg",
     address: "1600  LOWER BROOK CLEMMONS NC 27012-7454 USA",
     description: "Park and chill no burnouts, no reving, no 2step.",
     time: "7:00pm",
@@ -14,8 +13,7 @@ const DUMMY_DATA = [
   {
     id: "m2",
     title: "Cars and Coffee",
-    image:
-      "https://uploads-ssl.webflow.com/5cdb65cd61c1c98e84b5135e/5d767e1f0dda9a4810649d12_Cars-and-Coffee.png",
+    image: "https://www.wickedbigmeet.com/images/wbm/car_show.jpg",
     address: "2800  NEBO BOONVILLE NC 27011-8284 USA",
     description:
       "Monthly cars and coffee please be respectful of the spot no burnouts!",
