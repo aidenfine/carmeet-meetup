@@ -6,6 +6,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <div>
+        <Link to="/">
         <img
           className={classes.logo}
           src={image}
@@ -13,6 +14,7 @@ function MainNavigation() {
           width={100}
           alt="logo"
         />
+        </Link>
       </div>
       <nav>
         <ul>
