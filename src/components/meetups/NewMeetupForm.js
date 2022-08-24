@@ -1,7 +1,11 @@
 import { useRef } from "react";
+import FileUploadPage from "./FileUploadPage";
+
 
 import Card from "../layout/ui/Card";
 import classes from "./NewMeetupForm.module.css";
+
+
 
 function NewMeetupForm(props) {
   const titleInputRef = useRef();
@@ -39,7 +43,7 @@ function NewMeetupForm(props) {
           <label htmlFor="title">Meet Name</label>
           <input type="text" required id="title" ref={titleInputRef} />
         </div>
-        <div className={classes.control}>
+        {/* <div className={classes.control}>
           <label htmlFor="image">Image</label>
           <input
             type="url"
@@ -47,8 +51,9 @@ function NewMeetupForm(props) {
             id="image"
             placeholder="URL"
             ref={imageInputRef}
-          />
-        </div>
+          /> 
+        </div> */}
+        <FileUploadPage />
         <div className={classes.control}>
           <label htmlFor="address">Address</label>
           <input type="text" required id="address" ref={addressInputRef} />
