@@ -1,13 +1,13 @@
 import { useRef } from "react";
-import FileUploadPage from "./FileUploadPage";
-
-
 import Card from "../layout/ui/Card";
 import classes from "./NewMeetupForm.module.css";
+import * as React from 'react';
+
 
 
 
 function NewMeetupForm(props) {
+
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -16,10 +16,12 @@ function NewMeetupForm(props) {
   const dateInputRef = useRef();
 
   function submitHandler(event) {
+    
+
     event.preventDefault();
 
     const finalTitle = titleInputRef.current.value;
-    const finalImage = imageInputRef.current.value;
+    const finalImage = imageInputRef.current.value
     const finalAddress = addressInputRef.current.value;
     const finalDescription = descriptionInputRef.current.value;
     const finalTime = timeInputRef.current.value;
@@ -53,7 +55,13 @@ function NewMeetupForm(props) {
             ref={imageInputRef}
           /> 
         </div> */}
-        <FileUploadPage />
+        <label>Upload an image as base64 url</label>
+        <div className={classes.control}>
+        <input type="text"
+        required
+        ref={imageInputRef}
+        />
+        </div>
         <div className={classes.control}>
           <label htmlFor="address">Address</label>
           <input type="text" required id="address" ref={addressInputRef} />
@@ -88,11 +96,7 @@ function NewMeetupForm(props) {
       </form>
     </Card>
   );
-}
+};
 
 export default NewMeetupForm;
 
-<div className={classes.control}>
-  <label htmlFor="title">Date</label>
-  <input type="text" required id="date" />
-</div>;

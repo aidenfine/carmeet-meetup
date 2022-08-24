@@ -1,6 +1,8 @@
 import Card from "../layout/ui/Card";
 import classes from "./MeetupItem.module.css";
 function MeetupItem(props) {
+
+
   return (
     <li className={classes.item}>
       <Card>
@@ -13,7 +15,7 @@ function MeetupItem(props) {
         <p>{props.description}</p>
         <p>{props.time}</p>
         <p>{props.date}</p>
-      </div>
+        </div>
       <div className={classes.actions}>
         <button>Add to Favorites</button>
       </div>
