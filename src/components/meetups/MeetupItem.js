@@ -9,7 +9,17 @@ function MeetupItem(props) {
   const itemIsFavorite = favoriteCtx.itemIsFavorite(props.id);
   function toggleFavoriteStatusHandler(){
     if(itemIsFavorite){
-      
+      favoriteCtx.removeFavorite(props.id) 
+    } else{
+      favoriteCtx.addFavorite({
+        id: props.id,
+        title: props.title,
+        image: props.title,
+        description: props.description,
+        address: props.address,
+        time: props.time,
+        date: props.date
+      })
     }
 
 
@@ -30,7 +40,7 @@ function MeetupItem(props) {
         <p>{props.date}</p>
         </div>
       <div className={classes.actions}>
-        <button>I'm Going!</button>
+        <button onClick={toggleFavoriteStatusHandler}>{itemIsFavorite ? 'Not Going' : "I'm Going!"}</button>
       </div>
       </Card>
     </li>
