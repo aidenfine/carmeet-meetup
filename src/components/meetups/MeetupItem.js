@@ -14,7 +14,7 @@ function MeetupItem(props) {
       favoriteCtx.addFavorite({
         id: props.id,
         title: props.title,
-        image: props.title,
+        image: props.image,
         description: props.description,
         address: props.address,
         time: props.time,
