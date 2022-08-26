@@ -10,6 +10,7 @@ function Favorites() {
     content = <p>You currently aren't in any events</p>
   } else{
   content = <MeetupList meetups={favoriteCtx.favorites} />
+  return content
 };
   
   return <section>

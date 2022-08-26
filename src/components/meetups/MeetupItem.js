@@ -7,9 +7,11 @@ function MeetupItem(props) {
   const favoriteCtx = useContext(FavoritesContext)
 
   const itemIsFavorite = favoriteCtx.itemIsFavorite(props.id);
-  function toggleFavoriteStatusHandler(){
+  function toggleFavoriteStatusHandler(event){
+    event.target.style.backgroundColor = "red"
     if(itemIsFavorite){
-      favoriteCtx.removeFavorite(props.id) 
+      event.target.style.backgroundColor = "#62b4f4"
+      favoriteCtx.removeFavorite(props.id)
     } else{
       favoriteCtx.addFavorite({
         id: props.id,
@@ -40,7 +42,7 @@ function MeetupItem(props) {
         <p>{props.date}</p>
         </div>
       <div className={classes.actions}>
-        <button onClick={toggleFavoriteStatusHandler}>{itemIsFavorite ? 'Not Going' : "I'm Going!"}</button>
+        <button onClick={toggleFavoriteStatusHandler}>{itemIsFavorite ? 'Remove' : "I'm Going!"}</button>
       </div>
       </Card>
     </li>

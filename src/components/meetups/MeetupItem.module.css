@@ -43,3 +43,8 @@
 .actions button:active {
   background-color: #62b4f4;
 }
+
+.addToMeet {
+  background-color: red;
+  color: white;
+}

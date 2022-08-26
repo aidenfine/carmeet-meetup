@@ -45,17 +45,7 @@ function NewMeetupForm(props) {
           <label htmlFor="title">Meet Name</label>
           <input type="text" required id="title" ref={titleInputRef} />
         </div>
-        {/* <div className={classes.control}>
-          <label htmlFor="image">Image</label>
-          <input
-            type="url"
-            required
-            id="image"
-            placeholder="URL"
-            ref={imageInputRef}
-          /> 
-        </div> */}
-        <label>Upload an image as base64 url</label>
+        <label>Upload an image as a url</label>
         <div className={classes.control}>
         <input type="text"
         required
