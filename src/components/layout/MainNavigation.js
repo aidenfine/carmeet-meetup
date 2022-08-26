@@ -1,4 +1,4 @@
-import image from "/Users/aidenfine/react-tut/src/images/logo-removebg-preview.png";
+import image from "../layout/logo-removebg-preview.png";
 import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 
